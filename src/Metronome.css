@@ -1,0 +1,60 @@
+.metronome {
+  text-align: center;
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bpm-slider {
+  width: 100%;
+}
+
+.bpm-slider input {
+  margin: 10px;
+  width: 50%;
+}
+
+.title {
+  font-size: 250%;
+  color: blue;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+.bpm {
+  font-size: 250%;
+  color: purple;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 875px;
+}
+
+.time-signature {
+  width: 50%;
+  transform: scale(1.5);
+}
+
+.time-signature-slider input {
+  width: 100%;
+  margin: 10px;
+  transform: scale(1.5);
+}
+
+.metronome button {
+  background: blue;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100px;
+  color: #fff;
+  font-size: 18px;
+  transform: scale(2);
+  margin-right: 70px;
+}
