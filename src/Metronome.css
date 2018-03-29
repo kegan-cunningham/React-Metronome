@@ -1,44 +1,67 @@
+body {
+  background-color: gray;
+}
+
 .metronome {
   text-align: center;
-  max-width: 875px;
+  max-width: 675px;
   margin: 0 auto;
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url('./assets/metal.jpg');
+  border: 1px solid black;
+  margin-top: 50px;
+  border-radius: 7%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .bpm-slider {
   width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 675px;
+  border: 1px solid black;
+  border-top: 0px;
 }
 
 .bpm-slider input {
   margin: 10px;
   width: 50%;
+  transform: scale(1.5);
 }
 
 .title {
   font-size: 250%;
   color: blue;
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  margin: 15px;
 }
 
 .bpm {
   font-size: 250%;
-  color: purple;
+  margin: 0px;
 }
 
-.bottom {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 875px;
+.count {
+  font-size: 650%;
+  color: blue;
+  margin: 0px;
+  margin-left: 100px;
 }
 
 .time-signature {
-  width: 50%;
   transform: scale(1.5);
+  height: 100%;
+  margin-right: 60px;
 }
 
 .time-signature-slider input {
@@ -52,9 +75,10 @@
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  width: 100px;
+  width: 180px;
+  height: 80px;
   color: #fff;
-  font-size: 18px;
-  transform: scale(2);
-  margin-right: 70px;
+  font-size: 32px;
+  margin: 5px;
+  border-radius: 7%;
 }

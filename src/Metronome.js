@@ -81,12 +81,12 @@ class Metronome extends Component {
   }
 
   render() {
-    const { playing, bpm, timeSignature } = this.state;
+    const { playing, bpm, timeSignature, count } = this.state;
 
     return (
       <main className="metronome">
         <section className="bpm-slider">
-          <h2 className="title">Simple Metronome</h2>
+          <h2 className="title">Metronome</h2>
           <p className="bpm">{bpm} BPM</p>
           <input
             type="range"
@@ -106,10 +106,11 @@ class Metronome extends Component {
               value={timeSignature}
               onChange={this.handleTimeSignatureChange} />
           </section>
-          <button onClick={this.startStop}>
-            {playing ? 'Stop' : 'Start'}
-          </button>
+          <p className="count">{count == 0 ? timeSignature : count}</p>
         </section>
+        <button onClick={this.startStop}>
+          {playing ? 'Stop' : 'Start'}
+        </button>
       </main>
     );
   }
