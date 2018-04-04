@@ -1,5 +1,6 @@
 body {
-  background-color: gray;
+  background-image: url('./assets/drums.jpg');
+  background-size: cover;
 }
 
 .metronome {
@@ -11,6 +12,8 @@ body {
   align-items: center;
   flex-direction: column;
   background-image: url('./assets/metal.jpg');
+  opacity: 0.9;
+  background-blend-mode: luminosity;
   border: 1px solid black;
   margin-top: 50px;
   border-radius: 7%;
@@ -41,7 +44,7 @@ body {
 
 .title {
   font-size: 250%;
-  color: blue;
+  color: #33576F;
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
   margin: 15px;
 }
@@ -53,7 +56,7 @@ body {
 
 .count {
   font-size: 650%;
-  color: blue;
+  color: #33576F;
   margin: 0px;
   margin-left: 100px;
 }
@@ -71,7 +74,7 @@ body {
 }
 
 .metronome button {
-  background: blue;
+  background: #33576F;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
